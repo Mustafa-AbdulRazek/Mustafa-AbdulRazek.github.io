@@ -9,6 +9,7 @@
 </head>
 <body>
     <header>
+        <img src="profile.jpg" alt="Mustafa AbdulRazek" class="profile-pic">
         <h1>Mustafa AbdulRazek, MSc</h1>
         <p>Senior Machine Learning Engineer | Researcher | Instructor</p>
         <div class="contact">
@@ -24,8 +25,14 @@
     <section id="about">
         <h2>About Me</h2>
         <p>I am a passionate Machine Learning Engineer with a strong academic background and industry experience in developing and deploying AI solutions. My expertise spans various AI domains, including computer vision, NLP, and fraud detection.</p>
-        <p><strong>Core Technical Skills:</strong> Machine Learning, Deep Learning, NLP, Computer Vision, Data Engineering, MLOps, Intelligent Control</p>
-        <p><strong>Soft Skills:</strong> Problem-Solving, Critical Thinking, Leadership, Teaching & Mentorship, Cross-functional Collaboration</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill"><span>Machine Learning</span> <div class="progress"><div style="width: 90%"></div></div></div>
+        <div class="skill"><span>Deep Learning</span> <div class="progress"><div style="width: 85%"></div></div></div>
+        <div class="skill"><span>Python</span> <div class="progress"><div style="width: 95%"></div></div></div>
+        <div class="skill"><span>Data Engineering</span> <div class="progress"><div style="width: 80%"></div></div></div>
     </section>
     
     <section id="education">
@@ -42,25 +49,37 @@
         <ul>
             <li>Developed and deployed ML models for insurance claim fraud detection.</li>
             <li>Designed and implemented computer vision solutions for medical image analysis.</li>
-            <li>Applied NLP techniques to extract insights from unstructured medical records.</li>
-            <li>Built scalable and efficient data pipelines for ML applications.</li>
-            <li>Mentored junior engineers and conducted technical training sessions.</li>
-        </ul>
-        <h3>Teaching & Research</h3>
-        <ul>
-            <li>Instructor in Python, Data Science, and Machine Learning for beginner and advanced students.</li>
-            <li>Researcher in AI-driven solutions, focusing on explainability and optimization techniques.</li>
         </ul>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li><strong>Medical Fraud Detection:</strong> Implemented an ML-based system to identify fraudulent claims in healthcare.</li>
-            <li><strong>Arabic NLP Toolkit:</strong> Developed a comprehensive NLP pipeline for Arabic text processing and analysis.</li>
-            <li><strong>AI-driven Document Classification:</strong> Built a deep learning model to categorize medical documents.</li>
-            <li><strong>MLOps Framework:</strong> Designed a scalable MLOps architecture for deploying and monitoring ML models.</li>
-        </ul>
+        <div class="project-gallery">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <p><strong>Medical Fraud Detection:</strong> ML-based system to identify fraudulent claims.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <p><strong>Arabic NLP Toolkit:</strong> NLP pipeline for Arabic text processing.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>"Mustafa is an outstanding ML Engineer with a deep understanding of AI solutions!" - Colleague</blockquote>
+        <blockquote>"An excellent mentor and researcher who makes complex topics easy to grasp." - Student</blockquote>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
     
     <footer>
