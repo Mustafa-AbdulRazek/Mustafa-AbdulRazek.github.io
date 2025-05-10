@@ -91,6 +91,9 @@
             <p>Get to know my background and expertise</p>
           </div>
           <div class="about-content">
+            <div class="about-image">
+              <img src="profile.png" alt="Mustafa AbdulRazek" class="profile-image">
+            </div>
             <div class="about-text">
               <p>
                 I'm a <strong>Senior Machine Learning Engineer</strong> with over <strong>7 years of experience</strong> 
@@ -103,24 +106,40 @@
                 developing sophisticated fraud detection systems to creating specialized healthcare AI applications.
               </p>
               <p>
-                I hold a <strong>Master's degree in AI and Machine Learning</strong> and collaborate actively with academic 
+                I hold a <strong>Master's degree in Computer Science</strong> and collaborate actively with academic 
                 institutions as a Co-Principal Investigator. I'm passionate about bridging the gap between academic research 
                 and industry applications to create practical AI solutions that make a difference.
               </p>
-              <ul class="about-info">
-                <li>
-                  <i class="ri-map-pin-line"></i>
-                  <span>Dubai, UAE</span>
-                </li>
-                <li>
-                  <i class="ri-mail-line"></i>
-                  <span>mustafa@fci.helwan.edu.eg</span>
-                </li>
-                <li>
-                  <i class="ri-calendar-line"></i>
-                  <span>Available for new opportunities (3 months notice)</span>
-                </li>
-              </ul>
+              
+              <div class="about-details">
+                <div class="about-details-grid">
+                  <div class="detail-item">
+                    <div class="detail-label">Name</div>
+                    <div class="detail-value">Mustafa AbdulRazek</div>
+                  </div>
+                  <div class="detail-item">
+                    <div class="detail-label">Email</div>
+                    <div class="detail-value">mustafa@fci.helwan.edu.eg</div>
+                  </div>
+                  <div class="detail-item">
+                    <div class="detail-label">Location</div>
+                    <div class="detail-value">Dubai, UAE</div>
+                  </div>
+                  <div class="detail-item">
+                    <div class="detail-label">Degree</div>
+                    <div class="detail-value">MSc in Computer Science</div>
+                  </div>
+                  <div class="detail-item">
+                    <div class="detail-label">Experience</div>
+                    <div class="detail-value">7+ Years</div>
+                  </div>
+                  <div class="detail-item">
+                    <div class="detail-label">Notice Period</div>
+                    <div class="detail-value">One Month</div>
+                  </div>
+                </div>
+              </div>
+              
               <div class="social-links">
                 <a href="https://github.com/" target="_blank" class="social-link">
                   <i class="ri-github-fill"></i>
@@ -1190,14 +1209,14 @@
                 <i class="ri-mail-line"></i>
                 <div>
                   <h3>Email</h3>
-                  <p>mustafa@fci.helwan.edu.eg</p>
+                  <p><a href="mailto:mustafa@fci.helwan.edu.eg">mustafa@fci.helwan.edu.eg</a></p>
                 </div>
               </div>
               <div class="contact-item">
                 <i class="ri-calendar-line"></i>
                 <div>
-                  <h3>Availability</h3>
-                  <p>Open to opportunities (3 months notice)</p>
+                  <h3>Notice Period</h3>
+                  <p>One Month</p>
                 </div>
               </div>
               <div class="social-links contact-social">
@@ -1219,7 +1238,7 @@
               </div>
             </div>
             <div class="contact-form-container">
-              <form class="contact-form" id="contact-form">
+              <form class="contact-form" id="contact-form" action="mailto:mustafa@fci.helwan.edu.eg" method="post" enctype="text/plain">
                 <div class="form-group">
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -1236,9 +1255,18 @@
                   <label for="message">Message</label>
                   <textarea id="message" name="message" placeholder="Your message" required></textarea>
                 </div>
-                <button type="submit" class="button primary submit-button">
-                  <i class="ri-send-plane-line"></i> Send Message
-                </button>
+                <div class="form-actions">
+                  <button type="submit" class="button primary submit-button">
+                    <i class="ri-send-plane-line"></i> Send Message
+                  </button>
+                  <a href="mailto:mustafa@fci.helwan.edu.eg" class="button outline email-direct-button">
+                    <i class="ri-mail-open-line"></i> Email Directly
+                  </a>
+                </div>
+                <div class="form-status">
+                  <div id="form-success" class="form-message success">Message sent successfully!</div>
+                  <div id="form-error" class="form-message error">There was an error. Please try emailing directly.</div>
+                </div>
               </form>
             </div>
           </div>
@@ -1351,19 +1379,36 @@
 
       // Handle contact form submission
       const contactForm = document.getElementById('contact-form');
+      const formSuccess = document.getElementById('form-success');
+      const formError = document.getElementById('form-error');
       
       contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+        // We're using the mailto: protocol which is handled by the browser
+        // No need to preventDefault as we want the form to actually submit
         
-        const formData = new FormData(contactForm);
-        const formProps = Object.fromEntries(formData);
-        
-        // In a real implementation, you would send this data to a server
-        console.log('Form submitted:', formProps);
-        
-        // Show success message
-        alert('Thank you for your message! I will get back to you soon.');
-        contactForm.reset();
+        try {
+          // Show success message - this won't actually appear since the page
+          // will be redirected to the email client, but we'll keep it for completeness
+          formSuccess.style.display = 'block';
+          formError.style.display = 'none';
+          
+          // Note: The form will be handled by the mailto: protocol in the form action
+          // and will open the user's default email client with the form data
+          
+          // If we're still here after a second, it means the mailto: didn't work
+          // or was cancelled, so we'll show an error
+          setTimeout(() => {
+            if (document.activeElement === document.body) {
+              formError.style.display = 'block';
+              formSuccess.style.display = 'none';
+            }
+          }, 1000);
+        } catch (error) {
+          console.error('Form submission error:', error);
+          formError.style.display = 'block';
+          formSuccess.style.display = 'none';
+          e.preventDefault(); // Prevent form submission on error
+        }
       });
 
       // Animate skill bars on scroll
