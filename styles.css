@@ -408,10 +408,19 @@ img {
   }
 } */
 
-.hero-blob {
+.hero-blob-wrapper {
   position: relative;
   width: 400px;
   height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-blob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   background: radial-gradient(
     circle at center,
     rgba(33, 150, 243, 0.3) 0%,
@@ -421,20 +430,18 @@ img {
   border-radius: 50%;
   filter: blur(50px);
   animation: float 6s ease-in-out infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  z-index: 0;
 }
 
 .hero-photo {
-  position: absolute;
+  position: relative;
   width: 250px;
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
   z-index: 1;
 }
+
 
 
 /* About Section */
