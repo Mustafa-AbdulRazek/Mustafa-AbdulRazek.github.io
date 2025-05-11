@@ -408,48 +408,6 @@ img {
   }
 }
 
-/* .hero-blob-wrapper {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-blob {
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(
-    circle at center,
-    rgba(33, 150, 243, 0.3) 0%,
-    rgba(33, 150, 243, 0.1) 50%,
-    transparent 70%
-  );
-  border-radius: 50%;
-  filter: blur(50px);
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
-.hero-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  z-index: 1;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-} */
-
-
 
 /* About Section */
 .about-content {
