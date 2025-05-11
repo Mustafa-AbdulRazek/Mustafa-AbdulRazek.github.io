@@ -410,8 +410,8 @@ img {
 
 .hero-blob-wrapper {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -434,12 +434,12 @@ img {
 }
 
 .hero-photo {
-  position: relative;
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   z-index: 1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 
