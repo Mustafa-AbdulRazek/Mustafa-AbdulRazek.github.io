@@ -238,7 +238,7 @@ img {
 
 /* Mobile Menu */
 .mobile-menu {
-  position: fixed;
+  positiclass="hero-blob"on: fixed;
   top: 0;
   right: -100%;
   width: 80%;
@@ -385,7 +385,7 @@ img {
   align-items: center;
 }
 
-.hero-blob {
+/* .hero-blob {
   width: 400px;
   height: 400px;
   background: radial-gradient(
@@ -406,7 +406,36 @@ img {
   50% {
     transform: translateY(-20px);
   }
+} */
+
+.hero-blob {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle at center,
+    rgba(33, 150, 243, 0.3) 0%,
+    rgba(33, 150, 243, 0.1) 50%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  filter: blur(50px);
+  animation: float 6s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
+
+.hero-photo {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
+}
+
 
 /* About Section */
 .about-content {
