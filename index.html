@@ -1,1692 +1,929 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Mustafa AbdulRazek | Machine Learning Engineer</title>
-    <meta name="description" content="Senior Machine Learning Engineer with 7+ years of experience in NLP, Computer Vision, and Fraud Detection. View my portfolio, projects, and publications.">
-    <meta property="og:title" content="Mustafa AbdulRazek | ML Engineer Portfolio">
-    <meta property="og:description" content="Machine Learning Engineer with expertise in NLP, Computer Vision, and Fraud Detection systems.">
-    <meta property="og:type" content="website">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body> 
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <a href="#home">MA</a>
-        </div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#publications" class="nav-link">Publications</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="theme-toggle" aria-label="Toggle theme">
-          <i class="ri-sun-line"></i>
-        </button>
-        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
-          <i class="ri-menu-line"></i>
-        </button>
-      </div>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustafa AbdulRazek — Senior ML Engineer</title>
+  <meta name="description" content="Senior ML Engineer & Team Lead with 8+ years building production AI. 7 peer-reviewed publications in IEEE, Elsevier & Frontiers. Specializing in LLMs, RAG, Healthcare AI.">
+  <meta property="og:title" content="Mustafa AbdulRazek — Senior ML Engineer">
+  <meta property="og:description" content="ML Team Lead · 8+ years · 7 publications · LLMs, RAG, Healthcare AI & Fraud Detection">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <div class="mobile-menu">
-      <button class="mobile-menu-close">
-        <i class="ri-close-line"></i>
-      </button>
-      <nav>
-        <ul>
-          <li><a href="#home" class="mobile-nav-link">Home</a></li>
-          <li><a href="#about" class="mobile-nav-link">About</a></li>
-          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
-          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
-          <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
-          <li><a href="#publications" class="mobile-nav-link">Publications</a></li>
-          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+  <!-- =========================================================
+       HEADER
+  ========================================================= -->
+  <header class="header">
+    <div class="container">
+      <div class="logo"><a href="#home">MA</a></div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#about"          class="nav-link">About</a></li>
+          <li><a href="#skills"         class="nav-link">Skills</a></li>
+          <li><a href="#projects"       class="nav-link">Projects</a></li>
+          <li><a href="#experience"     class="nav-link">Experience</a></li>
+          <li><a href="#publications"   class="nav-link">Publications</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact"        class="nav-link">Contact</a></li>
         </ul>
       </nav>
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="ri-sun-line"></i></button>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu"><i class="ri-menu-line"></i></button>
     </div>
+  </header>
 
-    <main>
-      <!-- Hero Section -->
-      <section id="home" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-text">
-              <h1 class="hero-title">Mustafa AbdulRazek</h1>
-              <h2 class="hero-subtitle">Machine Learning Engineer</h2>
-              <p class="hero-description">
-                Building intelligent solutions with deep learning, NLP, and computer vision.
-                Focused on creating impactful AI applications in healthcare and fraud detection.
-              </p>
-              <div class="hero-buttons">
-                <a href="#contact" class="button primary">Get in Touch</a>
-                <a href="Mustafa AbdulRazek Resume-3.pdf" class="button outline" target="_blank">
-                  <i class="ri-download-line"></i> Download CV
-                </a>
-              </div>
-            </div>
-            <div class="hero-image">
-              <div class="hero-blob"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close"><i class="ri-close-line"></i></button>
+    <nav>
+      <ul>
+        <li><a href="#about"          class="mobile-nav-link">About</a></li>
+        <li><a href="#skills"         class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects"       class="mobile-nav-link">Projects</a></li>
+        <li><a href="#experience"     class="mobile-nav-link">Experience</a></li>
+        <li><a href="#publications"   class="mobile-nav-link">Publications</a></li>
+        <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+        <li><a href="#contact"        class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 
-      <!-- About Section -->
-      <section id="about" class="about section">
-        <div class="container">
-          <div class="section-heading">
-            <h2>About <span>Me</span></h2>
-            <p>Get to know my background and expertise</p>
-          </div>
-          <div class="about-content">
-            <div class="about-image">
-              <img src="profile.png" alt="Mustafa AbdulRazek" class="profile-image">
-            </div>
-            <div class="about-text">
-              <p>
-                I'm a <strong>Senior Machine Learning Engineer</strong> with over <strong>7 years of experience</strong> 
-                specializing in developing advanced AI solutions for healthcare and fraud detection. Currently serving as a 
-                <strong>Machine Learning Team Lead</strong>, I drive innovations in NLP, computer vision, and generative AI.
-              </p>
-              <p>
-                With a strong background in research, I've contributed to multiple publications in prestigious journals and 
-                conferences, focusing on applying cutting-edge ML techniques to real-world problems. My expertise spans from 
-                developing sophisticated fraud detection systems to creating specialized healthcare AI applications.
-              </p>
-              <p>
-                I hold a <strong>Master's degree in Computer Science</strong> and collaborate actively with academic 
-                institutions as a Co-Principal Investigator. I'm passionate about bridging the gap between academic research 
-                and industry applications to create practical AI solutions that make a difference.
-              </p>
-              
-              <div class="about-details">
-                <div class="about-details-grid">
-                  <div class="detail-item">
-                    <div class="detail-label">Name</div>
-                    <div class="detail-value">Mustafa AbdulRazek</div>
-                  </div>
-                  <div class="detail-item">
-                    <div class="detail-label">Email</div>
-                    <div class="detail-value">mustafa@fci.helwan.edu.eg</div>
-                  </div>
-                  <div class="detail-item">
-                    <div class="detail-label">Location</div>
-                    <div class="detail-value">Dubai, UAE</div>
-                  </div>
-                  <div class="detail-item">
-                    <div class="detail-label">Degree</div>
-                    <div class="detail-value">MSc in Computer Science</div>
-                  </div>
-                  <div class="detail-item">
-                    <div class="detail-label">Experience</div>
-                    <div class="detail-value">7+ Years</div>
-                  </div>
-                  <div class="detail-item">
-                    <div class="detail-label">Notice Period</div>
-                    <div class="detail-value">One Month</div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="social-links">
-                <a href="https://github.com/" target="_blank" class="social-link">
-                  <i class="ri-github-fill"></i>
-                </a>
-                <a href="https://linkedin.com/" target="_blank" class="social-link">
-                  <i class="ri-linkedin-fill"></i>
-                </a>
-                <a href="https://scholar.google.com/" target="_blank" class="social-link">
-                  <i class="ri-book-2-line"></i>
-                </a>
-                <a href="https://medium.com/" target="_blank" class="social-link">
-                  <i class="ri-medium-fill"></i>
-                </a>
-                <a href="https://twitter.com/" target="_blank" class="social-link">
-                  <i class="ri-twitter-x-fill"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <main>
 
-      <!-- Skills Section -->
-      <section id="skills" class="skills section">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My <span>Skills</span></h2>
-            <p>Specialized expertise in AI and machine learning</p>
-          </div>
-          
-          <div class="gamified-skills">
-            <div class="skills-tabs">
-              <button class="skill-tab active" data-category="machine-learning">
-                <i class="ri-brain-line"></i> Machine Learning
-              </button>
-              <button class="skill-tab" data-category="generative-ai">
-                <i class="ri-robot-line"></i> Generative AI
-              </button>
-              <button class="skill-tab" data-category="deep-learning">
-                <i class="ri-terminal-box-line"></i> Deep Learning
-              </button>
-              <button class="skill-tab" data-category="nlp-cv">
-                <i class="ri-eye-line"></i> NLP & Computer Vision
-              </button>
-            </div>
-            
-            <div class="skills-dashboard">
-              <div class="skill-category-display active" data-category="machine-learning">
-                <div class="skill-header">
-                  <div class="skill-title">
-                    <h3>Machine Learning</h3>
-                    <div class="mastery-badge">
-                      <span class="mastery-level">Expert</span>
-                      <div class="mastery-circle">
-                        <span>95</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-stats">
-                    <div class="stat">
-                      <span class="stat-value">4</span>
-                      <span class="stat-label">Skills</span>
-                    </div>
-                    <div class="stat">
-                      <span class="stat-value">25+</span>
-                      <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat">
-                      <span class="stat-value">7+</span>
-                      <span class="stat-label">Years</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="skill-cards">
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Forecasting</h4>
-                      <div class="skill-level-indicator">Level 19</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">95%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 95%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1425 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Time Series Analysis Master">
-                        <i class="ri-line-chart-line"></i>
-                      </div>
-                      <div class="badge" title="Prophet Specialist">
-                        <i class="ri-calendar-check-line"></i>
-                      </div>
-                      <div class="badge" title="ARIMA Expert">
-                        <i class="ri-bar-chart-2-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Feature Engineering</h4>
-                      <div class="skill-level-indicator">Level 18</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">90%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 90%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1350 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Feature Selector">
-                        <i class="ri-database-2-line"></i>
-                      </div>
-                      <div class="badge" title="Data Transformer">
-                        <i class="ri-bubble-chart-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Model Explainability</h4>
-                      <div class="skill-level-indicator">Level 17</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">85%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1275 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="SHAP Expert">
-                        <i class="ri-glasses-line"></i>
-                      </div>
-                      <div class="badge" title="LIME Specialist">
-                        <i class="ri-lightbulb-flash-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Hyperparameter Tuning</h4>
-                      <div class="skill-level-indicator">Level 18</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">92%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 92%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1380 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Grid Search Master">
-                        <i class="ri-grid-line"></i>
-                      </div>
-                      <div class="badge" title="Bayesian Optimization Expert">
-                        <i class="ri-focus-3-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="achievements">
-                  <h4>Achievements Unlocked</h4>
-                  <div class="achievement-list">
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-award-fill"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>Master Forecaster</h5>
-                        <p>Created 25+ forecasting models with high accuracy</p>
-                      </div>
-                    </div>
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-medal-line"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>Feature Wizard</h5>
-                        <p>Engineered features that improved model performance by 30%</p>
-                      </div>
-                    </div>
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-trophy-line"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>Optimization Guru</h5>
-                        <p>Achieved 92% efficiency in hyperparameter tuning workflows</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="skill-category-display" data-category="generative-ai">
-                <div class="skill-header">
-                  <div class="skill-title">
-                    <h3>Generative AI</h3>
-                    <div class="mastery-badge secondary">
-                      <span class="mastery-level">Expert</span>
-                      <div class="mastery-circle">
-                        <span>92</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-stats">
-                    <div class="stat">
-                      <span class="stat-value">4</span>
-                      <span class="stat-label">Skills</span>
-                    </div>
-                    <div class="stat">
-                      <span class="stat-value">18+</span>
-                      <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat">
-                      <span class="stat-value">4+</span>
-                      <span class="stat-label">Years</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="skill-cards">
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Prompt Engineering</h4>
-                      <div class="skill-level-indicator">Level 19</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">96%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill secondary" style="width: 96%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1440 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Chain-of-Thought Expert">
-                        <i class="ri-direction-line"></i>
-                      </div>
-                      <div class="badge" title="Context Optimization Master">
-                        <i class="ri-file-text-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>LLM Fine-Tuning</h4>
-                      <div class="skill-level-indicator">Level 17</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">88%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill secondary" style="width: 88%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1320 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Parameter-Efficient Tuning Master">
-                        <i class="ri-settings-5-line"></i>
-                      </div>
-                      <div class="badge" title="LoRA Expert">
-                        <i class="ri-compasses-2-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>RAG</h4>
-                      <div class="skill-level-indicator">Level 18</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">90%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill secondary" style="width: 90%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1350 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Embeddings Specialist">
-                        <i class="ri-dimensions-line"></i>
-                      </div>
-                      <div class="badge" title="Context Engineering Master">
-                        <i class="ri-organization-chart"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Vector Databases</h4>
-                      <div class="skill-level-indicator">Level 17</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">85%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill secondary" style="width: 85%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1275 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Pinecone Expert">
-                        <i class="ri-database-2-line"></i>
-                      </div>
-                      <div class="badge" title="FAISS Specialist">
-                        <i class="ri-search-eye-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="achievements">
-                  <h4>Achievements Unlocked</h4>
-                  <div class="achievement-list">
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-award-fill"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>Prompt Architect</h5>
-                        <p>Designed prompt libraries that increased response quality by 40%</p>
-                      </div>
-                    </div>
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-medal-line"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>RAG Pioneer</h5>
-                        <p>Built retrieval systems with 92% accuracy in domain-specific contexts</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="skill-category-display" data-category="deep-learning">
-                <div class="skill-header">
-                  <div class="skill-title">
-                    <h3>Deep Learning</h3>
-                    <div class="mastery-badge accent">
-                      <span class="mastery-level">Expert</span>
-                      <div class="mastery-circle">
-                        <span>93</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-stats">
-                    <div class="stat">
-                      <span class="stat-value">4</span>
-                      <span class="stat-label">Skills</span>
-                    </div>
-                    <div class="stat">
-                      <span class="stat-value">20+</span>
-                      <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat">
-                      <span class="stat-value">6+</span>
-                      <span class="stat-label">Years</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="skill-cards">
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>PyTorch</h4>
-                      <div class="skill-level-indicator">Level 19</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">95%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill accent" style="width: 95%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1425 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Custom Architecture Design">
-                        <i class="ri-building-line"></i>
-                      </div>
-                      <div class="badge" title="Distributed Training Expert">
-                        <i class="ri-server-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>TensorFlow</h4>
-                      <div class="skill-level-indicator">Level 18</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">90%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill accent" style="width: 90%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1350 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Keras Master">
-                        <i class="ri-shape-line"></i>
-                      </div>
-                      <div class="badge" title="TFX Specialist">
-                        <i class="ri-tools-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>CNNs</h4>
-                      <div class="skill-level-indicator">Level 18</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">93%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill accent" style="width: 93%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1395 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="ResNet Architect">
-                        <i class="ri-layout-grid-line"></i>
-                      </div>
-                      <div class="badge" title="Feature Visualization Expert">
-                        <i class="ri-contrast-drop-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Transformers</h4>
-                      <div class="skill-level-indicator">Level 18</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">91%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill accent" style="width: 91%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1365 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Attention Mechanism Specialist">
-                        <i class="ri-focus-2-line"></i>
-                      </div>
-                      <div class="badge" title="HuggingFace Expert">
-                        <i class="ri-emotion-happy-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="achievements">
-                  <h4>Achievements Unlocked</h4>
-                  <div class="achievement-list">
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-award-fill"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>Neural Architect</h5>
-                        <p>Designed custom architectures for 15+ specialized applications</p>
-                      </div>
-                    </div>
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-medal-line"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>Transformer Wizard</h5>
-                        <p>Implemented attention mechanisms with 93% efficiency rate</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="skill-category-display" data-category="nlp-cv">
-                <div class="skill-header">
-                  <div class="skill-title">
-                    <h3>NLP & Computer Vision</h3>
-                    <div class="mastery-badge">
-                      <span class="mastery-level">Expert</span>
-                      <div class="mastery-circle">
-                        <span>91</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="skill-stats">
-                    <div class="stat">
-                      <span class="stat-value">4</span>
-                      <span class="stat-label">Skills</span>
-                    </div>
-                    <div class="stat">
-                      <span class="stat-value">22+</span>
-                      <span class="stat-label">Projects</span>
-                    </div>
-                    <div class="stat">
-                      <span class="stat-value">5+</span>
-                      <span class="stat-label">Years</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="skill-cards">
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Named Entity Recognition</h4>
-                      <div class="skill-level-indicator">Level 19</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">94%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 94%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1410 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="BiLSTM-CRF Master">
-                        <i class="ri-file-list-3-line"></i>
-                      </div>
-                      <div class="badge" title="SpaCy Expert">
-                        <i class="ri-text"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Text Classification</h4>
-                      <div class="skill-level-indicator">Level 18</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">92%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 92%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1380 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="BERT Fine-Tuning Expert">
-                        <i class="ri-book-open-line"></i>
-                      </div>
-                      <div class="badge" title="Multi-class Classification Master">
-                        <i class="ri-apps-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Object Detection</h4>
-                      <div class="skill-level-indicator">Level 17</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">88%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 88%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1320 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="YOLO Master">
-                        <i class="ri-sticky-note-line"></i>
-                      </div>
-                      <div class="badge" title="Faster R-CNN Expert">
-                        <i class="ri-scan-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="skill-card">
-                    <div class="skill-card-header">
-                      <h4>Image Classification</h4>
-                      <div class="skill-level-indicator">Level 18</div>
-                    </div>
-                    <div class="skill-card-progress">
-                      <div class="progress-percentage">90%</div>
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 90%"></div>
-                      </div>
-                      <div class="progress-xp">
-                        <span>1350 / 1500 XP</span>
-                      </div>
-                    </div>
-                    <div class="skill-badges">
-                      <div class="badge" title="Transfer Learning Expert">
-                        <i class="ri-function-line"></i>
-                      </div>
-                      <div class="badge" title="Fine-Tuning Master">
-                        <i class="ri-image-edit-line"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="achievements">
-                  <h4>Achievements Unlocked</h4>
-                  <div class="achievement-list">
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-award-fill"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>NER Champion</h5>
-                        <p>Developed medical NER systems with 94% F1 score</p>
-                      </div>
-                    </div>
-                    <div class="achievement">
-                      <div class="achievement-icon">
-                        <i class="ri-medal-line"></i>
-                      </div>
-                      <div class="achievement-info">
-                        <h5>Vision Pioneer</h5>
-                        <p>Built custom object detection models for specialized healthcare domains</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="skill-roadmap">
-              <h4>Skill Development Roadmap</h4>
-              <div class="roadmap-timeline">
-                <div class="roadmap-item completed">
-                  <div class="roadmap-marker"></div>
-                  <div class="roadmap-content">
-                    <h5>Machine Learning Foundations</h5>
-                    <p>Completed 2017</p>
-                  </div>
-                </div>
-                <div class="roadmap-item completed">
-                  <div class="roadmap-marker"></div>
-                  <div class="roadmap-content">
-                    <h5>Deep Learning Specialization</h5>
-                    <p>Completed 2019</p>
-                  </div>
-                </div>
-                <div class="roadmap-item completed">
-                  <div class="roadmap-marker"></div>
-                  <div class="roadmap-content">
-                    <h5>NLP & Computer Vision Applications</h5>
-                    <p>Completed 2021</p>
-                  </div>
-                </div>
-                <div class="roadmap-item completed">
-                  <div class="roadmap-marker"></div>
-                  <div class="roadmap-content">
-                    <h5>Generative AI Mastery</h5>
-                    <p>Completed 2023</p>
-                  </div>
-                </div>
-                <div class="roadmap-item current">
-                  <div class="roadmap-marker"></div>
-                  <div class="roadmap-content">
-                    <h5>Advanced RAG & Multi-modal AI</h5>
-                    <p>In Progress (75%)</p>
-                    <div class="roadmap-progress">
-                      <div class="roadmap-progress-bar" style="width: 75%"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="roadmap-item">
-                  <div class="roadmap-marker"></div>
-                  <div class="roadmap-content">
-                    <h5>AI Agent Architecture</h5>
-                    <p>Planned 2025</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="projects section">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My <span>Projects</span></h2>
-            <p>Innovative AI solutions across diverse domains</p>
-          </div>
-          <div class="projects-grid">
-            <div class="project-card primary">
-              <div class="project-image">
-                <div class="project-category">GenAI</div>
-                <img src="https://pixabay.com/get/g42c772dabe89241fcdf1702351404d494610834962d05208d24ad08b2a577b882ef01745caef2720e23c3006647c6de37dbd66d3cea9bb7c161529566d137478_1280.jpg" alt="GenAI - Q&A LLM in Healthcare" />
-              </div>
-              <div class="project-content">
-                <h3>GenAI - Q&A LLM in Healthcare</h3>
-                <p>A specialized LLM that provides accurate medical information by leveraging RAG and domain-specific fine-tuning.</p>
-                <div class="project-tags">
-                  <span class="tag">LangChain</span>
-                  <span class="tag">RAG</span>
-                  <span class="tag">FAISS</span>
-                  <span class="tag">LLM Fine-tuning</span>
-                </div>
-                <a href="#" class="project-link">
-                  View Project <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card secondary">
-              <div class="project-image">
-                <div class="project-category">Computer Vision</div>
-                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="3D IOS Dental Caries Ins-Seg" />
-              </div>
-              <div class="project-content">
-                <h3>3D IOS Dental Caries Ins-Seg</h3>
-                <p>Instance segmentation model for detecting dental caries and restorations in 3D intraoral scans.</p>
-                <div class="project-tags">
-                  <span class="tag">PyTorch</span>
-                  <span class="tag">3D CNN</span>
-                  <span class="tag">Instance Segmentation</span>
-                  <span class="tag">Medical Imaging</span>
-                </div>
-                <a href="#" class="project-link">
-                  View Project <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card primary">
-              <div class="project-image">
-                <div class="project-category">GenAI</div>
-                <img src="https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="GenAI - Dialogue Summarization" />
-              </div>
-              <div class="project-content">
-                <h3>GenAI - Dialogue Summarization</h3>
-                <p>Fine-tuned transformer model to automatically generate concise summaries from medical dialogue transcripts.</p>
-                <div class="project-tags">
-                  <span class="tag">Transformers</span>
-                  <span class="tag">BERT</span>
-                  <span class="tag">Seq2Seq</span>
-                  <span class="tag">Healthcare NLP</span>
-                </div>
-                <a href="#" class="project-link">
-                  View Project <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card accent">
-              <div class="project-image">
-                <div class="project-category">NLP</div>
-                <img src="https://pixabay.com/get/g90082bf21d10b3f9a8e857ec33ea1eb164cc8df73e138c1a597d6074afc4e54e4f684dad709140ccb7583faa9dc667be2cf304788887f006c9c25a918ac4682e_1280.jpg" alt="AiCode - NLP" />
-              </div>
-              <div class="project-content">
-                <h3>AiCode - NLP</h3>
-                <p>Code analysis tool that uses NLP to identify potential bugs, security vulnerabilities, and style inconsistencies.</p>
-                <div class="project-tags">
-                  <span class="tag">LSTM</span>
-                  <span class="tag">CodeBERT</span>
-                  <span class="tag">TensorFlow</span>
-                  <span class="tag">Code Analysis</span>
-                </div>
-                <a href="#" class="project-link">
-                  View Project <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card secondary">
-              <div class="project-image">
-                <div class="project-category">Fraud Detection</div>
-                <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="AiReview - Fraud Detection" />
-              </div>
-              <div class="project-content">
-                <h3>AiReview - Fraud Detection</h3>
-                <p>Graph neural network model for detecting fraudulent patterns in financial transactions and medical claims.</p>
-                <div class="project-tags">
-                  <span class="tag">GNN</span>
-                  <span class="tag">PyTorch Geometric</span>
-                  <span class="tag">Anomaly Detection</span>
-                  <span class="tag">Healthcare</span>
-                </div>
-                <a href="#" class="project-link">
-                  View Project <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card secondary">
-              <div class="project-image">
-                <div class="project-category">Computer Vision</div>
-                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Doctor Template Detection" />
-              </div>
-              <div class="project-content">
-                <h3>Doctor Template Detection</h3>
-                <p>Computer vision system that identifies and extracts structured information from medical forms and prescriptions.</p>
-                <div class="project-tags">
-                  <span class="tag">OpenCV</span>
-                  <span class="tag">OCR</span>
-                  <span class="tag">Document Analysis</span>
-                  <span class="tag">Healthcare</span>
-                </div>
-                <a href="#" class="project-link">
-                  View Project <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="experience" class="experience section">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Work <span>Experience</span></h2>
-            <p>My professional journey in machine learning and AI</p>
-          </div>
-          <div class="timeline">
-            <div class="timeline-card primary">
-              <div class="timeline-header">
-                <h3>Machine Learning Team Lead</h3>
-                <div class="timeline-meta">
-                  <div class="timeline-company">TachyHealth Inc.</div>
-                  <div class="timeline-period">Jan 2023 - Present</div>
-                </div>
-              </div>
-              <div class="timeline-content">
-                <p>Leading an ML team in developing AI solutions for fraud detection and healthcare. Driving R&D in Generative AI, RAG, and LLMs, contributing to published research. Established MLOps best practices that improved model deployment efficiency by 40% and implemented robust CI/CD pipelines.</p>
-                <div class="timeline-skills">
-                  <span class="skill-tag">Team Leadership</span>
-                  <span class="skill-tag">Generative AI</span>
-                  <span class="skill-tag">MLOps</span>
-                  <span class="skill-tag">Healthcare AI</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card secondary">
-              <div class="timeline-header">
-                <h3>Senior Machine Learning Engineer</h3>
-                <div class="timeline-meta">
-                  <div class="timeline-company">TachyHealth Inc.</div>
-                  <div class="timeline-period">Jan 2020 - Dec 2022</div>
-                </div>
-              </div>
-              <div class="timeline-content">
-                <p>Developed ML models for fraud detection and healthcare data processing with 92% accuracy. Designed NLP and deep learning solutions for document automation and information extraction, reducing manual processing time by 75%.</p>
-                <div class="timeline-skills">
-                  <span class="skill-tag">ML Model Development</span>
-                  <span class="skill-tag">Fraud Detection</span>
-                  <span class="skill-tag">NLP</span>
-                  <span class="skill-tag">Deep Learning</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card accent">
-              <div class="timeline-header">
-                <h3>Co-Principal Investigator (Co-PI)</h3>
-                <div class="timeline-meta">
-                  <div class="timeline-company">Zayed University</div>
-                  <div class="timeline-period">Sep 2022 - Oct 2024</div>
-                </div>
-              </div>
-              <div class="timeline-content">
-                <p>Led healthcare AI research, collaborating with academic and industry partners. Developed Graph Neural Network models for fraud detection in healthcare systems that achieved 88% precision and 85% recall in identifying fraudulent claims.</p>
-                <div class="timeline-skills">
-                  <span class="skill-tag">Research</span>
-                  <span class="skill-tag">GNN</span>
-                  <span class="skill-tag">Healthcare</span>
-                  <span class="skill-tag">Academic Collaboration</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card primary">
-              <div class="timeline-header">
-                <h3>Co-Secondary Investigator (Co-SI)</h3>
-                <div class="timeline-meta">
-                  <div class="timeline-company">King AbdulAziz University</div>
-                  <div class="timeline-period">Jul 2023 - Aug 2024</div>
-                </div>
-              </div>
-              <div class="timeline-content">
-                <p>Contributed to interdisciplinary AI research that bridged theory with practical applications. Developed ML models for 3D intraoral scan analysis, improving caries and restoration detection by 35% over traditional methods.</p>
-                <div class="timeline-skills">
-                  <span class="skill-tag">3D Analysis</span>
-                  <span class="skill-tag">Medical Imaging</span>
-                  <span class="skill-tag">Research</span>
-                  <span class="skill-tag">Dental AI</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-card secondary">
-              <div class="timeline-header">
-                <h3>ML Team Lead</h3>
-                <div class="timeline-meta">
-                  <div class="timeline-company">Stream-kick AI</div>
-                  <div class="timeline-period">Mar 2023 - Present (Part-time)</div>
-                </div>
-              </div>
-              <div class="timeline-content">
-                <p>Leading computer vision algorithms development to analyze live match video for precise insights. Delivering AI-powered player statistics updated in real-time using state-of-the-art AI technologies.</p>
-                <div class="timeline-skills">
-                  <span class="skill-tag">Computer Vision</span>
-                  <span class="skill-tag">Real-time Analysis</span>
-                  <span class="skill-tag">Sports Analytics</span>
-                  <span class="skill-tag">Video Processing</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Publications Section -->
-      <section id="publications" class="publications section">
-        <div class="container">
-          <div class="section-heading">
-            <h2>My <span>Publications</span></h2>
-            <p>Research contributions to the field of AI and machine learning</p>
-          </div>
-          <div class="publications-list">
-            <div class="publication-card">
-              <div class="publication-content">
-                <h3>Generative AI with Big Data for Better Detection of Fraud in Medical Claims</h3>
-                <div class="publication-meta">
-                  <div class="publication-journal">IEEE HealthCom</div>
-                  <div class="publication-date">Feb. 2025</div>
-                </div>
-                <p>This paper presents a novel approach to fraud detection in medical claims using generative AI techniques with big data analytics, significantly improving detection accuracy by 28% compared to traditional methods. The research combines transformer-based models with healthcare domain knowledge to identify subtle patterns in claim data.</p>
-                <div class="publication-keywords">
-                  <span class="keyword">Generative AI</span>
-                  <span class="keyword">Fraud Detection</span>
-                  <span class="keyword">Big Data</span>
-                  <span class="keyword">Healthcare</span>
-                </div>
-                <a href="#" class="publication-link">
-                  Read Publication <i class="ri-external-link-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="publication-card">
-              <div class="publication-content">
-                <h3>GNN as Explainable Tool with Heterogeneous and Homogeneous Data for Medical Claim Validation</h3>
-                <div class="publication-meta">
-                  <div class="publication-journal">IEEE CINS</div>
-                  <div class="publication-date">Feb. 2025</div>
-                </div>
-                <p>This research explores the use of Graph Neural Networks as explainable tools for medical claim validation, effectively handling both heterogeneous and homogeneous data sources. The model achieved 91% accuracy in validating complex medical claims while providing interpretable decision paths.</p>
-                <div class="publication-keywords">
-                  <span class="keyword">GNN</span>
-                  <span class="keyword">Explainable AI</span>
-                  <span class="keyword">Healthcare</span>
-                  <span class="keyword">Interpretability</span>
-                </div>
-                <a href="#" class="publication-link">
-                  Read Publication <i class="ri-external-link-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="publication-card">
-              <div class="publication-content">
-                <h3>Fraud Detection in Medical Insurance Claims Using Majority Voting of Multiple Unsupervised Algorithms</h3>
-                <div class="publication-meta">
-                  <div class="publication-journal">Procedia Computer Science, vol. 244, pp. 9-22</div>
-                  <div class="publication-date">Oct. 2024</div>
-                </div>
-                <p>This paper introduces a novel ensemble approach that leverages majority voting of multiple unsupervised algorithms for more accurate detection of fraudulent medical insurance claims. The approach reduced false positives by 45% while maintaining high sensitivity to fraudulent patterns.</p>
-                <div class="publication-keywords">
-                  <span class="keyword">Ensemble Learning</span>
-                  <span class="keyword">Unsupervised Learning</span>
-                  <span class="keyword">Insurance Fraud</span>
-                  <span class="keyword">Healthcare</span>
-                </div>
-                <a href="#" class="publication-link">
-                  Read Publication <i class="ri-external-link-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="publication-card">
-              <div class="publication-content">
-                <h3>GAN-GA: A Generative Model based on Genetic Algorithm for Medical Image Generation</h3>
-                <div class="publication-meta">
-                  <div class="publication-journal">Frontiers in Medical Technology</div>
-                  <div class="publication-date">Dec. 2023</div>
-                </div>
-                <p>This research presents GAN-GA, a novel generative model that combines GANs with genetic algorithms to create synthetic medical images for improved training of diagnostic systems. The approach generated high-fidelity medical images that improved downstream diagnostic model performance by 23%.</p>
-                <div class="publication-keywords">
-                  <span class="keyword">GAN</span>
-                  <span class="keyword">Genetic Algorithms</span>
-                  <span class="keyword">Medical Imaging</span>
-                  <span class="keyword">Synthetic Data</span>
-                </div>
-                <a href="#" class="publication-link">
-                  Read Publication <i class="ri-external-link-line"></i>
-                </a>
-              </div>
-            </div>
-            <div class="publication-card">
-              <div class="publication-content">
-                <h3>Med-Flair: Medical Named Entity Recognition for Diseases and Medications based on Flair Embedding</h3>
-                <div class="publication-meta">
-                  <div class="publication-journal">AI in Computational Linguistics, Elsevier</div>
-                  <div class="publication-date">Jul. 2021</div>
-                </div>
-                <p>This paper presents Med-Flair, a specialized NER system for medical text that achieved state-of-the-art performance in identifying diseases and medications in clinical notes. The model incorporates contextual embedding techniques with medical domain knowledge.</p>
-                <div class="publication-keywords">
-                  <span class="keyword">NLP</span>
-                  <span class="keyword">Named Entity Recognition</span>
-                  <span class="keyword">Healthcare</span>
-                  <span class="keyword">Embeddings</span>
-                </div>
-                <a href="#" class="publication-link">
-                  Read Publication <i class="ri-external-link-line"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="contact section">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Get In <span>Touch</span></h2>
-            <p>Interested in collaboration? Let's connect!</p>
-          </div>
-          <div class="contact-content">
-            <div class="contact-info">
-              <div class="contact-item">
-                <i class="ri-map-pin-line"></i>
-                <div>
-                  <h3>Location</h3>
-                  <p>Dubai, UAE</p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <i class="ri-mail-line"></i>
-                <div>
-                  <h3>Email</h3>
-                  <p><a href="mailto:mustafa@fci.helwan.edu.eg">mustafa@fci.helwan.edu.eg</a></p>
-                </div>
-              </div>
-              <div class="contact-item">
-                <i class="ri-calendar-line"></i>
-                <div>
-                  <h3>Notice Period</h3>
-                  <p>One Month</p>
-                </div>
-              </div>
-              <div class="social-links contact-social">
-                <a href="https://github.com/" target="_blank" class="social-link">
-                  <i class="ri-github-fill"></i>
-                </a>
-                <a href="https://linkedin.com/" target="_blank" class="social-link">
-                  <i class="ri-linkedin-fill"></i>
-                </a>
-                <a href="https://scholar.google.com/" target="_blank" class="social-link">
-                  <i class="ri-book-2-line"></i>
-                </a>
-                <a href="https://medium.com/" target="_blank" class="social-link">
-                  <i class="ri-medium-fill"></i>
-                </a>
-                <a href="https://twitter.com/" target="_blank" class="social-link">
-                  <i class="ri-twitter-x-fill"></i>
-                </a>
-              </div>
-            </div>
-            <div class="contact-form-container">
-              <form class="contact-form" id="contact-form" action="mailto:mustafa@fci.helwan.edu.eg" method="post" enctype="text/plain">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Your name" required />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Your email" required />
-                </div>
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <input type="text" id="subject" name="subject" placeholder="Subject" required />
-                </div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" placeholder="Your message" required></textarea>
-                </div>
-                <div class="form-actions">
-                  <button type="submit" class="button primary submit-button">
-                    <i class="ri-send-plane-line"></i> Send Message
-                  </button>
-                  <a href="mailto:mustafa@fci.helwan.edu.eg" class="button outline email-direct-button">
-                    <i class="ri-mail-open-line"></i> Email Directly
-                  </a>
-                </div>
-                <div class="form-status">
-                  <div id="form-success" class="form-message success">Message sent successfully!</div>
-                  <div id="form-error" class="form-message error">There was an error. Please try emailing directly.</div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+    <!-- =========================================================
+         HERO
+    ========================================================= -->
+    <section id="home" class="hero">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-logo">
-            <a href="#home">Mustafa AbdulRazek</a>
+        <div class="hero-content">
+
+          <div class="hero-text">
+            <div class="hero-badge">Available for senior ML roles</div>
+            <h1 class="hero-title">Mustafa AbdulRazek</h1>
+            <h2 class="hero-subtitle">Senior ML Engineer &amp; Team Lead</h2>
+            <p class="hero-description">
+              8+ years building production AI systems in healthcare and fraud detection.
+              Research-to-deployment specialist in LLMs, RAG, NLP, and Computer Vision —
+              with 7 peer-reviewed publications in IEEE, Elsevier &amp; Frontiers.
+            </p>
+
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="hero-stat-value">8+</span>
+                <span class="hero-stat-label">Years Exp.</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-value">7</span>
+                <span class="hero-stat-label">Publications</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-value">25+</span>
+                <span class="hero-stat-label">AI Projects</span>
+              </div>
+              <div class="hero-stat">
+                <span class="hero-stat-value">2×</span>
+                <span class="hero-stat-label">IEEE 2025</span>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="#contact" class="button primary">Get in Touch</a>
+              <a href="Mustafa_AbdulRazek_Resume_Official_3.pdf" class="button outline" target="_blank" rel="noopener">
+                <i class="ri-download-line"></i> Download CV
+              </a>
+              <a href="#publications" class="button outline">
+                <i class="ri-file-paper-line"></i> View Papers
+              </a>
+            </div>
           </div>
-          <p class="footer-text">Machine Learning Engineer focused on healthcare AI and fraud detection</p>
-          <div class="footer-social">
-            <a href="https://github.com/" target="_blank" class="footer-social-link">
-              <i class="ri-github-fill"></i>
-            </a>
-            <a href="https://linkedin.com/" target="_blank" class="footer-social-link">
-              <i class="ri-linkedin-fill"></i>
-            </a>
-            <a href="https://scholar.google.com/" target="_blank" class="footer-social-link">
-              <i class="ri-book-2-line"></i>
-            </a>
-            <a href="https://medium.com/" target="_blank" class="footer-social-link">
-              <i class="ri-medium-fill"></i>
-            </a>
-            <a href="https://twitter.com/" target="_blank" class="footer-social-link">
-              <i class="ri-twitter-x-fill"></i>
-            </a>
+
+          <div class="hero-image">
+            <div class="hero-photo-frame">
+              <img src="my_pic - Copy.png" alt="Mustafa AbdulRazek" class="hero-photo">
+              <div class="hero-tech-bubble"><i class="ri-robot-line"></i> LLMs &amp; RAG</div>
+              <div class="hero-tech-bubble"><i class="ri-shield-check-line"></i> Fraud Detection</div>
+              <div class="hero-tech-bubble"><i class="ri-heart-pulse-line"></i> Healthcare AI</div>
+            </div>
           </div>
+
         </div>
-        <div class="footer-bottom">
-          <p>© 2025 Mustafa AbdulRazek. All rights reserved.</p>
-          <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT
+    ========================================================= -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>About <span>Me</span></h2>
+          <p>Background, impact, and what I build</p>
+        </div>
+
+        <div class="about-content">
+
+          <div class="about-text">
+            <p>
+              I'm a <strong>Senior ML Engineer &amp; Team Lead</strong> with 8+ years turning research into production AI.
+              At <strong>TachyHealth Inc.</strong>, I lead an ML team building fraud detection and healthcare automation systems deployed on AWS and GCP — going from zero to production on LLM-powered workflows, RAG pipelines, and large-scale anomaly detection.
+            </p>
+            <p>
+              I bridge the gap between academic research and engineering: as <strong>Co-PI at Zayed University</strong> and <strong>Co-SI at King AbdulAziz University</strong>, I've published 7 peer-reviewed papers in IEEE, Elsevier, and Frontiers — including back-to-back IEEE papers in 2025.
+            </p>
+            <p>
+              I hold an <strong>MSc in Computer Science</strong> from Helwan University and hold 5 professional certifications including Udacity ML Engineer (NTL Scholarship) and DeepLearning.AI's Generative AI with LLMs.
+            </p>
+
+            <!-- Impact numbers -->
+            <div class="about-impact">
+              <div class="impact-stat">
+                <div class="impact-stat-value">40%</div>
+                <div class="impact-stat-label">Fraud Reduction</div>
+              </div>
+              <div class="impact-stat">
+                <div class="impact-stat-value">95%</div>
+                <div class="impact-stat-label">Coding Accuracy</div>
+              </div>
+              <div class="impact-stat">
+                <div class="impact-stat-value">75%</div>
+                <div class="impact-stat-label">Less Manual Work</div>
+              </div>
+            </div>
+
+            <div class="about-details">
+              <div class="about-details-grid">
+                <div class="detail-item">
+                  <span class="detail-label">Email</span>
+                  <span class="detail-value">mustafa.official.co@outlook.com</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Location</span>
+                  <span class="detail-value">Dubai, UAE</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Degree</span>
+                  <span class="detail-value">MSc in Computer Science</span>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">Notice Period</span>
+                  <span class="detail-value">One Month</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/Mustafa-AbdulRazek"                            target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+              <a href="https://www.linkedin.com/in/mustafa-abdulrazek/"                  target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://scholar.google.com/citations?user=ZemVhwIAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="social-link" aria-label="Google Scholar"><i class="ri-book-2-line"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <a href="#home" class="back-to-top">
-      <i class="ri-arrow-up-line"></i>
-    </a>
+    <!-- =========================================================
+         SKILLS — CLEAN TABLE (no gamification)
+    ========================================================= -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Technical <span>Skills</span></h2>
+          <p>Full-stack ML expertise — from research to production at scale</p>
+        </div>
 
-    <script>
-      // Toggle mobile menu
-      const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-      const mobileMenuClose = document.querySelector('.mobile-menu-close');
-      const mobileMenu = document.querySelector('.mobile-menu');
-      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        <div class="skills-table">
 
-      mobileMenuToggle.addEventListener('click', () => {
-        mobileMenu.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      });
+          <div class="skill-row">
+            <div class="skill-row-label">
+              <i class="ri-robot-line"></i> Generative AI
+            </div>
+            <div class="skill-chips">
+              <span class="chip highlight">LLM Fine-Tuning</span>
+              <span class="chip highlight">RAG Pipelines</span>
+              <span class="chip highlight">LangChain / LangGraph</span>
+              <span class="chip">Prompt Engineering</span>
+              <span class="chip">OpenAI APIs</span>
+              <span class="chip">FAISS · Chroma</span>
+              <span class="chip">Embeddings</span>
+            </div>
+          </div>
 
-      mobileMenuClose.addEventListener('click', () => {
-        mobileMenu.classList.remove('active');
-        document.body.style.overflow = '';
-      });
+          <div class="skill-row">
+            <div class="skill-row-label">
+              <i class="ri-brain-line"></i> Machine Learning
+            </div>
+            <div class="skill-chips">
+              <span class="chip highlight">Fraud Detection</span>
+              <span class="chip">Forecasting</span>
+              <span class="chip">Feature Engineering</span>
+              <span class="chip">SHAP / LIME</span>
+              <span class="chip">Adversarial Training</span>
+              <span class="chip">Hyperparameter Tuning</span>
+              <span class="chip">Anomaly Detection</span>
+            </div>
+          </div>
 
-      mobileNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.remove('active');
-          document.body.style.overflow = '';
-        });
-      });
+          <div class="skill-row">
+            <div class="skill-row-label">
+              <i class="ri-terminal-box-line"></i> Deep Learning
+            </div>
+            <div class="skill-chips">
+              <span class="chip highlight">PyTorch</span>
+              <span class="chip highlight">Transformers</span>
+              <span class="chip">TensorFlow · Keras</span>
+              <span class="chip">CNNs · RNNs</span>
+              <span class="chip">HuggingFace</span>
+              <span class="chip">GNNs</span>
+              <span class="chip">3D PointCloud</span>
+            </div>
+          </div>
 
-      // Theme toggle
-      const themeToggle = document.querySelector('.theme-toggle');
-      const htmlElement = document.documentElement;
-      
-      // Check for saved theme preference or use user's system preference
-      const savedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      
-      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-        htmlElement.classList.add('dark-theme');
-        themeToggle.innerHTML = '<i class="ri-moon-line"></i>';
-      } else {
-        htmlElement.classList.remove('dark-theme');
-        themeToggle.innerHTML = '<i class="ri-sun-line"></i>';
-      }
-      
-      themeToggle.addEventListener('click', () => {
-        htmlElement.classList.toggle('dark-theme');
-        
-        if (htmlElement.classList.contains('dark-theme')) {
-          localStorage.setItem('theme', 'dark');
-          themeToggle.innerHTML = '<i class="ri-moon-line"></i>';
-        } else {
-          localStorage.setItem('theme', 'light');
-          themeToggle.innerHTML = '<i class="ri-sun-line"></i>';
+          <div class="skill-row">
+            <div class="skill-row-label">
+              <i class="ri-eye-line"></i> NLP &amp; Vision
+            </div>
+            <div class="skill-chips">
+              <span class="chip">NER · Text Classification</span>
+              <span class="chip">Seq2Seq Summarization</span>
+              <span class="chip">Object Detection</span>
+              <span class="chip">Image Classification</span>
+              <span class="chip">OCR</span>
+              <span class="chip">OpenCV</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-row-label">
+              <i class="ri-cloud-line"></i> MLOps &amp; Cloud
+            </div>
+            <div class="skill-chips">
+              <span class="chip highlight">AWS (EC2, S3, SageMaker)</span>
+              <span class="chip">GCP Vertex AI</span>
+              <span class="chip">Azure ML</span>
+              <span class="chip">Docker</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">MLflow · W&amp;B</span>
+              <span class="chip">GitHub Actions CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-row-label">
+              <i class="ri-code-s-slash-line"></i> Data &amp; Eng.
+            </div>
+            <div class="skill-chips">
+              <span class="chip highlight">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">PySpark · Dask</span>
+              <span class="chip">Pandas · NumPy</span>
+              <span class="chip">Airflow</span>
+              <span class="chip">pytest · tox</span>
+              <span class="chip">Git</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PROJECTS
+    ========================================================= -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Featured <span>Projects</span></h2>
+          <p>Production systems with measurable, real-world impact</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card primary">
+            <div class="project-image">
+              <div class="project-category">GenAI · Healthcare</div>
+              <div class="project-metric">87% accuracy</div>
+              <img src="https://pixabay.com/get/g42c772dabe89241fcdf1702351404d494610834962d05208d24ad08b2a577b882ef01745caef2720e23c3006647c6de37dbd66d3cea9bb7c161529566d137478_1280.jpg" alt="GenAI Q&A LLM in Healthcare" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>GenAI — Q&amp;A LLM in Healthcare</h3>
+              <p>Production Q&amp;A system for medical queries using RAG and domain-specific LLM fine-tuning, achieving <strong>87% accuracy</strong> on clinical queries in live deployment at TachyHealth.</p>
+              <div class="project-tags">
+                <span class="tag">PyTorch</span><span class="tag">HuggingFace</span>
+                <span class="tag">RAG</span><span class="tag">LLM Fine-tuning</span>
+                <span class="tag">Transformers</span>
+              </div>
+              <a href="#" class="project-link">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card accent">
+            <div class="project-image">
+              <div class="project-category">NLP · Medical Coding</div>
+              <div class="project-metric">95% accuracy</div>
+              <img src="https://pixabay.com/get/g90082bf21d10b3f9a8e857ec33ea1eb164cc8df73e138c1a597d6074afc4e54e4f684dad709140ccb7583faa9dc667be2cf304788887f006c9c25a918ac4682e_1280.jpg" alt="AiCode Medical NLP" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>AiCode — AI Medical Coding</h3>
+              <p>Production NLP system auto-converting medical documents to billing codes with <strong>95% accuracy</strong>, eliminating 75% of manual processing time at scale.</p>
+              <div class="project-tags">
+                <span class="tag">PyTorch</span><span class="tag">Language Models</span>
+                <span class="tag">FastAPI</span><span class="tag">Fine-tuning</span>
+              </div>
+              <a href="#" class="project-link">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card secondary">
+            <div class="project-image">
+              <div class="project-category">Fraud Detection</div>
+              <div class="project-metric">40% fraud reduction</div>
+              <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="AiReview Fraud Detection" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>AiReview — Fraud Detection</h3>
+              <p>AI system for automated medical claims investigation using ensemble anomaly detection at scale. Reduces fraud by <strong>40%</strong> with PySpark and PyOD in production.</p>
+              <div class="project-tags">
+                <span class="tag">PyTorch</span><span class="tag">PySpark</span>
+                <span class="tag">PyOD</span><span class="tag">FastAPI</span>
+              </div>
+              <a href="#" class="project-link">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card secondary">
+            <div class="project-image">
+              <div class="project-category">Computer Vision · Dental AI</div>
+              <div class="project-metric">81% detection acc.</div>
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="3D Dental Caries Segmentation" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>3D IOS Dental Caries Segmentation</h3>
+              <p>Instance segmentation model for detecting decay in 3D intraoral scans. <strong>81% detection accuracy</strong>, deployed at KAUST Dental Center — 35% improvement over prior methods.</p>
+              <div class="project-tags">
+                <span class="tag">PyTorch</span><span class="tag">3D PointCloud</span>
+                <span class="tag">Instance Seg.</span><span class="tag">Medical Imaging</span>
+              </div>
+              <a href="#" class="project-link">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card primary">
+            <div class="project-image">
+              <div class="project-category">GenAI · NLP</div>
+              <div class="project-metric">90% content retention</div>
+              <img src="https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Medical Dialogue Summarization" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>GenAI — Medical Dialogue Summarization</h3>
+              <p>LLM fine-tuned for medical dialogue summarization using zero/one/few-shot techniques. Achieves <strong>90% content retention</strong> with AWS S3 integration.</p>
+              <div class="project-tags">
+                <span class="tag">Transformers</span><span class="tag">HuggingFace</span>
+                <span class="tag">AWS S3</span><span class="tag">Seq2Seq</span>
+              </div>
+              <a href="#" class="project-link">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+
+          <div class="project-card accent">
+            <div class="project-image">
+              <div class="project-category">Document AI</div>
+              <div class="project-metric">85% accuracy</div>
+              <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=500" alt="Doctor Template Detection" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3>Doctor Template Detection</h3>
+              <p>AI system clustering medical documentation patterns with <strong>85% accuracy</strong>, enabling automated document routing and reducing processing overhead.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span><span class="tag">TF-IDF</span>
+                <span class="tag">Clustering</span><span class="tag">Document Analysis</span>
+              </div>
+              <a href="#" class="project-link">View Project <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         EXPERIENCE
+    ========================================================= -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Work <span>Experience</span></h2>
+          <p>8+ years delivering impactful AI in healthcare and fraud detection</p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-card primary">
+            <div class="timeline-header">
+              <h3>Machine Learning Team Lead</h3>
+              <div class="timeline-meta">
+                <span class="timeline-company">TachyHealth Inc. · Dubai, UAE</span>
+                <span class="timeline-period">Jan 2023 – Present</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <p>Leading an ML team delivering AI solutions for fraud detection and healthcare automation. Driving R&amp;D in Generative AI, RAG, and LLMs with published research output. Established MLOps best practices improving deployment efficiency by <strong>40%</strong>. Engage directly with clients to define AI strategy and requirements.</p>
+              <div class="timeline-skills">
+                <span class="skill-tag">Team Leadership</span>
+                <span class="skill-tag">Generative AI</span>
+                <span class="skill-tag">MLOps</span>
+                <span class="skill-tag">LLMs &amp; RAG</span>
+                <span class="skill-tag">AWS · GCP</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card secondary">
+            <div class="timeline-header">
+              <h3>Senior Machine Learning Engineer</h3>
+              <div class="timeline-meta">
+                <span class="timeline-company">TachyHealth Inc. · Dubai, UAE</span>
+                <span class="timeline-period">Jan 2020 – Dec 2022</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <p>Built production ML models for fraud detection achieving <strong>92% accuracy</strong> and healthcare data processing pipelines. Designed NLP and deep learning solutions for document automation, reducing manual processing time by <strong>75%</strong>.</p>
+              <div class="timeline-skills">
+                <span class="skill-tag">ML Model Development</span>
+                <span class="skill-tag">Fraud Detection</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Deep Learning</span>
+                <span class="skill-tag">FastAPI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card accent">
+            <div class="timeline-header">
+              <h3>Co-Principal Investigator (Co-PI)</h3>
+              <div class="timeline-meta">
+                <span class="timeline-company">Zayed University · Dubai, UAE</span>
+                <span class="timeline-period">Sep 2022 – Oct 2024</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <p>Led healthcare AI research collaborating with academic and industry partners. Developed GNN models for medical fraud detection achieving <strong>88% precision / 85% recall</strong>. Work contributed to 2 IEEE publications (HealthCom &amp; CINS, 2025).</p>
+              <div class="timeline-skills">
+                <span class="skill-tag">Research Leadership</span>
+                <span class="skill-tag">GNN</span>
+                <span class="skill-tag">Healthcare AI</span>
+                <span class="skill-tag">2× IEEE 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-card primary">
+            <div class="timeline-header">
+              <h3>Co-Secondary Investigator (Co-SI)</h3>
+              <div class="timeline-meta">
+                <span class="timeline-company">King AbdulAziz University · Jeddah, SA</span>
+                <span class="timeline-period">Jul 2023 – Aug 2024</span>
+              </div>
+            </div>
+            <div class="timeline-content">
+              <p>Contributed to interdisciplinary AI research bridging theory and clinical practice. Developed 3D ML models for intraoral scan analysis — <strong>35% improvement</strong> over prior methods — deployed at KAUST Dental Center.</p>
+              <div class="timeline-skills">
+                <span class="skill-tag">3D Medical Imaging</span>
+                <span class="skill-tag">Computer Vision</span>
+                <span class="skill-tag">Dental AI</span>
+                <span class="skill-tag">KAUST</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PUBLICATIONS
+    ========================================================= -->
+    <section id="publications" class="publications section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Publications</h2>
+          <p>7 peer-reviewed papers in IEEE, Elsevier, and Frontiers journals</p>
+        </div>
+
+        <div class="publications-list">
+
+          <div class="publication-card">
+            <div class="publication-content">
+              <div class="pub-venue-row">
+                <span class="pub-venue">IEEE HealthCom</span>
+                <span class="pub-date">Feb 2025</span>
+              </div>
+              <h3>Generative AI with Big Data for Better Detection of Fraud in Medical Claims</h3>
+              <p>Transformer-based models with healthcare domain knowledge for fraud detection — improving accuracy by <strong>28%</strong> over traditional methods using big data analytics.</p>
+              <div class="publication-keywords">
+                <span class="keyword">Generative AI</span><span class="keyword">Fraud Detection</span>
+                <span class="keyword">Big Data</span><span class="keyword">Healthcare</span>
+              </div>
+              <a href="#" class="publication-link">Read Paper <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+
+          <div class="publication-card">
+            <div class="publication-content">
+              <div class="pub-venue-row">
+                <span class="pub-venue">IEEE CINS</span>
+                <span class="pub-date">Feb 2025</span>
+              </div>
+              <h3>GNN as Explainable Tool with Heterogeneous and Homogeneous Data for Medical Claim Validation</h3>
+              <p>Graph Neural Networks as explainable AI for medical claim validation. Achieved <strong>91% accuracy</strong> with interpretable decision paths — enabling full auditability of complex claims.</p>
+              <div class="publication-keywords">
+                <span class="keyword">GNN</span><span class="keyword">Explainable AI</span>
+                <span class="keyword">Healthcare</span><span class="keyword">Interpretability</span>
+              </div>
+              <a href="#" class="publication-link">Read Paper <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+
+          <div class="publication-card">
+            <div class="publication-content">
+              <div class="pub-venue-row">
+                <span class="pub-venue">Procedia Computer Science, vol. 244</span>
+                <span class="pub-date">Oct 2024</span>
+              </div>
+              <h3>Fraud Detection in Medical Insurance Claims Using Majority Voting of Multiple Unsupervised Algorithms</h3>
+              <p>Ensemble majority-voting of unsupervised algorithms for medical insurance fraud detection. Reduced false positives by <strong>45%</strong> while maintaining high sensitivity.</p>
+              <div class="publication-keywords">
+                <span class="keyword">Ensemble Learning</span><span class="keyword">Unsupervised</span>
+                <span class="keyword">Insurance Fraud</span><span class="keyword">Elsevier</span>
+              </div>
+              <a href="#" class="publication-link">Read Paper <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+
+          <div class="publication-card">
+            <div class="publication-content">
+              <div class="pub-venue-row">
+                <span class="pub-venue">Frontiers in Medical Technology</span>
+                <span class="pub-date">Dec 2023</span>
+              </div>
+              <h3>GAN-GA: A Generative Model based on Genetic Algorithm for Medical Image Generation</h3>
+              <p>GAN combined with genetic algorithms to generate high-fidelity synthetic medical images — improving downstream diagnostic model performance by <strong>23%</strong>.</p>
+              <div class="publication-keywords">
+                <span class="keyword">GAN</span><span class="keyword">Genetic Algorithms</span>
+                <span class="keyword">Medical Imaging</span><span class="keyword">Synthetic Data</span>
+              </div>
+              <a href="#" class="publication-link">Read Paper <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+
+          <div class="publication-card">
+            <div class="publication-content">
+              <div class="pub-venue-row">
+                <span class="pub-venue">AI in Computational Linguistics · Elsevier</span>
+                <span class="pub-date">Jul 2021</span>
+              </div>
+              <h3>Med-Flair: Medical Named Entity Recognition for Diseases and Medications based on Flair Embedding</h3>
+              <p>State-of-the-art NER system for clinical text — identifying diseases and medications using contextual Flair embeddings combined with medical domain knowledge.</p>
+              <div class="publication-keywords">
+                <span class="keyword">NLP</span><span class="keyword">NER</span>
+                <span class="keyword">Healthcare</span><span class="keyword">Embeddings</span>
+              </div>
+              <a href="#" class="publication-link">Read Paper <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+
+          <div class="publication-card">
+            <div class="publication-content">
+              <div class="pub-venue-row">
+                <span class="pub-venue">IEEE ICCCIS</span>
+                <span class="pub-date">Feb 2021</span>
+              </div>
+              <h3>Efficient Classification Approach Based on COVID-19 CT Images Analysis with Deep Features</h3>
+              <p>Deep learning classification of COVID-19 from CT images using efficient feature extraction, demonstrating robust performance on real-world clinical imaging data.</p>
+              <div class="publication-keywords">
+                <span class="keyword">Deep Learning</span><span class="keyword">COVID-19</span>
+                <span class="keyword">Medical Imaging</span><span class="keyword">IEEE</span>
+              </div>
+              <a href="#" class="publication-link">Read Paper <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+
+          <div class="publication-card">
+            <div class="publication-content">
+              <div class="pub-venue-row">
+                <span class="pub-venue">IUGRC · MTC Cairo</span>
+                <span class="pub-date">Jul 2016</span>
+              </div>
+              <h3>Computer-Aided Diagnosis System for Medical Laboratory Investigation</h3>
+              <p>Foundational CAD system for medical lab investigation — awarded <strong>2nd Place</strong> at the IbTIECar 2016 National Innovation Competition (Data Science Track), TIEC Egypt.</p>
+              <div class="publication-keywords">
+                <span class="keyword">CAD</span><span class="keyword">Medical Diagnosis</span>
+                <span class="keyword">Award Winner</span><span class="keyword">IUGRC</span>
+              </div>
+              <a href="#" class="publication-link">Read Paper <i class="ri-external-link-line"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CERTIFICATIONS & AWARDS
+    ========================================================= -->
+    <section id="certifications" class="certifications section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Certifications &amp; <span>Awards</span></h2>
+          <p>Recognized expertise and continuous professional development</p>
+        </div>
+
+        <div class="certs-grid">
+
+          <div class="cert-card primary">
+            <div class="cert-icon"><i class="ri-robot-2-line"></i></div>
+            <div class="cert-content">
+              <h3>Generative AI with LLMs</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">DeepLearning.AI · Coursera</span>
+                <span class="cert-date">May 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card secondary">
+            <div class="cert-icon"><i class="ri-settings-4-line"></i></div>
+            <div class="cert-content">
+              <h3>Machine Learning Operations (MLOps)</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Udemy</span>
+                <span class="cert-date">May 2022</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card accent">
+            <div class="cert-icon"><i class="ri-eye-line"></i></div>
+            <div class="cert-content">
+              <h3>Computer Vision Expert Nanodegree</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Udacity</span>
+                <span class="cert-date">Nov 2020</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card primary">
+            <div class="cert-icon"><i class="ri-brain-line"></i></div>
+            <div class="cert-content">
+              <h3>ML Engineer Nanodegree</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">Udacity · NTL Scholarship</span>
+                <span class="cert-date">Dec 2019</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card secondary">
+            <div class="cert-icon"><i class="ri-database-2-line"></i></div>
+            <div class="cert-content">
+              <h3>Big Data Specialist — IBM BigInsights V2.1</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">IBM Professional Certification</span>
+                <span class="cert-date">Apr 2016</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="cert-card award-card">
+            <div class="cert-icon"><i class="ri-trophy-fill"></i></div>
+            <div class="cert-content">
+              <h3>2nd Place — National Data Science Track</h3>
+              <div class="cert-meta">
+                <span class="cert-issuer">IbTIECar 2016 · TIEC Egypt</span>
+                <span class="cert-date">Feb 2017</span>
+              </div>
+              <p class="cert-desc">CAD System for Medical Lab Investigation — national innovation competition</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+    ========================================================= -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Get In <span>Touch</span></h2>
+          <p>Open to senior ML Engineer / ML Scientist roles, research collaborations, and consulting engagements</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="ri-map-pin-line"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Dubai, UAE</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="ri-mail-line"></i>
+              <div>
+                <h3>Email</h3>
+                <p><a href="mailto:mustafa.official.co@outlook.com">mustafa.official.co@outlook.com</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="ri-phone-line"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>(+20) 109 226 0392</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="ri-time-line"></i>
+              <div>
+                <h3>Notice Period</h3>
+                <p>One Month</p>
+              </div>
+            </div>
+            <div class="social-links contact-social">
+              <a href="https://github.com/Mustafa-AbdulRazek"                            target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+              <a href="https://www.linkedin.com/in/mustafa-abdulrazek/"                  target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://scholar.google.com/citations?user=ZemVhwIAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="social-link" aria-label="Google Scholar"><i class="ri-book-2-line"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form" action="mailto:mustafa.official.co@outlook.com" method="post" enctype="text/plain">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="e.g. Senior ML Engineer role at Acme" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell me about the opportunity or collaboration..." required></textarea>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="button primary submit-button">
+                  <i class="ri-send-plane-line"></i> Send Message
+                </button>
+                <a href="mailto:mustafa.official.co@outlook.com" class="button outline email-direct-button">
+                  <i class="ri-mail-open-line"></i> Email Directly
+                </a>
+              </div>
+              <div class="form-status">
+                <div id="form-success" class="form-message success">Message sent — I'll get back to you soon!</div>
+                <div id="form-error" class="form-message error">Something went wrong. Please email directly.</div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo"><a href="#home">Mustafa AbdulRazek</a></div>
+        <p class="footer-text">Senior ML Engineer &amp; Team Lead · LLMs · RAG · Healthcare AI · Fraud Detection</p>
+        <div class="footer-social">
+          <a href="https://github.com/Mustafa-AbdulRazek"                            target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub"><i class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/mustafa-abdulrazek/"                  target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://scholar.google.com/citations?user=ZemVhwIAAAAJ&amp;hl=en" target="_blank" rel="noopener" class="footer-social-link" aria-label="Google Scholar"><i class="ri-book-2-line"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mustafa AbdulRazek. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Papers</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#home" class="back-to-top" aria-label="Back to top"><i class="ri-arrow-up-line"></i></a>
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================= -->
+  <script>
+    // Mobile Menu
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenuClose  = document.querySelector('.mobile-menu-close');
+    const mobileMenu       = document.querySelector('.mobile-menu');
+    const mobileNavLinks   = document.querySelectorAll('.mobile-nav-link');
+
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    const closeMobileMenu = () => {
+      mobileMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileMenu));
+
+    // Theme Toggle
+    const themeToggle = document.querySelector('.theme-toggle');
+    const html        = document.documentElement;
+
+    const applyTheme = (dark) => {
+      html.classList.toggle('dark-theme', dark);
+      themeToggle.innerHTML = dark
+        ? '<i class="ri-moon-line"></i>'
+        : '<i class="ri-sun-line"></i>';
+    };
+
+    const savedTheme  = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(savedTheme === 'dark' || (!savedTheme && prefersDark));
+
+    themeToggle.addEventListener('click', () => {
+      const isDark = !html.classList.contains('dark-theme');
+      applyTheme(isDark);
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Back to Top
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('show', window.scrollY > 400);
+    }, { passive: true });
+
+    // Contact Form
+    document.getElementById('contact-form').addEventListener('submit', () => {
+      document.getElementById('form-success').style.display = 'block';
+      document.getElementById('form-error').style.display   = 'none';
+      setTimeout(() => {
+        if (document.activeElement === document.body) {
+          document.getElementById('form-error').style.display   = 'block';
+          document.getElementById('form-success').style.display = 'none';
         }
+      }, 1000);
+    });
+
+    // Smooth scroll for all anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        window.scrollTo({ top: target.offsetTop - 60, behavior: 'smooth' });
       });
+    });
 
-      // Back to top button
-      const backToTopButton = document.querySelector('.back-to-top');
-      
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-          backToTopButton.classList.add('show');
-        } else {
-          backToTopButton.classList.remove('show');
-        }
-      });
+    // Active nav link on scroll (Intersection Observer — more accurate)
+    const sections  = document.querySelectorAll('section[id]');
+    const navLinks  = document.querySelectorAll('.nav-link');
 
-      // Handle contact form submission
-      const contactForm = document.getElementById('contact-form');
-      const formSuccess = document.getElementById('form-success');
-      const formError = document.getElementById('form-error');
-      
-      contactForm.addEventListener('submit', (e) => {
-        // We're using the mailto: protocol which is handled by the browser
-        // No need to preventDefault as we want the form to actually submit
-        
-        try {
-          // Show success message - this won't actually appear since the page
-          // will be redirected to the email client, but we'll keep it for completeness
-          formSuccess.style.display = 'block';
-          formError.style.display = 'none';
-          
-          // Note: The form will be handled by the mailto: protocol in the form action
-          // and will open the user's default email client with the form data
-          
-          // If we're still here after a second, it means the mailto: didn't work
-          // or was cancelled, so we'll show an error
-          setTimeout(() => {
-            if (document.activeElement === document.body) {
-              formError.style.display = 'block';
-              formSuccess.style.display = 'none';
-            }
-          }, 1000);
-        } catch (error) {
-          console.error('Form submission error:', error);
-          formError.style.display = 'block';
-          formSuccess.style.display = 'none';
-          e.preventDefault(); // Prevent form submission on error
-        }
-      });
-
-      // Animate skill bars on scroll
-      const skillBars = document.querySelectorAll('.skill-progress-bar');
-      
-      function animateSkillBars() {
-        skillBars.forEach(bar => {
-          const position = bar.getBoundingClientRect().top;
-          const screenPosition = window.innerHeight / 1.3;
-          
-          if (position < screenPosition) {
-            bar.style.width = bar.style.width;
-            bar.style.animation = 'skillFill 1s ease-out forwards';
-          }
-        });
-      }
-      
-      window.addEventListener('scroll', animateSkillBars);
-      window.addEventListener('load', animateSkillBars);
-
-      // Add smooth scrolling for navigation
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            window.scrollTo({
-              top: target.offsetTop - 80,
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-
-      // Highlight active navigation link based on scroll position
-      const sections = document.querySelectorAll('section');
-      const navLinks = document.querySelectorAll('.nav-link');
-      
-      window.addEventListener('scroll', () => {
-        let current = '';
-        
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          
-          if (scrollY >= (sectionTop - 100)) {
-            current = section.getAttribute('id');
-          }
-        });
-        
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-          }
-        });
-      });
-
-      // Gamified Skills Section Interactivity
-      const skillTabs = document.querySelectorAll('.skill-tab');
-      const skillCategoryDisplays = document.querySelectorAll('.skill-category-display');
-      const badges = document.querySelectorAll('.badge');
-      
-      // Skills Tab Switching
-      skillTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-          // Remove active class from all tabs
-          skillTabs.forEach(t => t.classList.remove('active'));
-          
-          // Add active class to clicked tab
-          tab.classList.add('active');
-          
-          // Get the category to display
-          const category = tab.getAttribute('data-category');
-          
-          // Hide all skill category displays
-          skillCategoryDisplays.forEach(display => {
-            display.classList.remove('active');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => {
+            l.classList.toggle('active', l.getAttribute('href') === '#' + entry.target.id);
           });
-          
-          // Show the selected category display
-          document.querySelector(`.skill-category-display[data-category="${category}"]`).classList.add('active');
-        });
+        }
       });
-      
-      // Badge tooltips functionality
-      badges.forEach(badge => {
-        // Create a tooltip element
-        const tooltip = document.createElement('div');
-        tooltip.className = 'badge-tooltip';
-        tooltip.textContent = badge.getAttribute('title');
-        badge.appendChild(tooltip);
-        
-        // Show tooltip on hover
-        badge.addEventListener('mouseenter', () => {
-          tooltip.style.display = 'block';
-          setTimeout(() => {
-            tooltip.style.opacity = '1';
-            tooltip.style.transform = 'translateY(0)';
-          }, 10);
-        });
-        
-        // Hide tooltip when hover ends
-        badge.addEventListener('mouseleave', () => {
-          tooltip.style.opacity = '0';
-          tooltip.style.transform = 'translateY(-5px)';
-          setTimeout(() => {
-            tooltip.style.display = 'none';
-          }, 300);
-        });
+    }, { threshold: 0.3, rootMargin: '-60px 0px -40% 0px' });
+
+    sections.forEach(s => observer.observe(s));
+
+    // Chip hover ripple (subtle micro-interaction)
+    document.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('mouseenter', () => {
+        chip.style.transition = 'all 0.18s cubic-bezier(0.4, 0, 0.2, 1)';
       });
-      
-      // Interactive XP Counter Animation
-      const xpCounters = document.querySelectorAll('.progress-xp span');
-      
-      function animateXPCounters() {
-        xpCounters.forEach(counter => {
-          const position = counter.getBoundingClientRect().top;
-          const screenPosition = window.innerHeight / 1.3;
-          
-          if (position < screenPosition) {
-            const text = counter.textContent;
-            const [current, total] = text.split(' / ').map(num => parseInt(num));
-            let count = 0;
-            const duration = 1500;
-            const interval = duration / current;
-            
-            const counterAnimation = setInterval(() => {
-              count++;
-              counter.textContent = `${count} / ${total} XP`;
-              
-              if (count >= current) {
-                clearInterval(counterAnimation);
-              }
-            }, interval);
-            
-            // Remove event listener once animation has run
-            window.removeEventListener('scroll', animateXPCounters);
-          }
-        });
-      }
-      
-      window.addEventListener('scroll', animateXPCounters);
-      window.addEventListener('load', animateXPCounters);
-      
-      // Skill Card Interactive Effects
-      const skillCards = document.querySelectorAll('.skill-card');
-      
-      skillCards.forEach(card => {
-        card.addEventListener('click', () => {
-          // Add a pulse animation class
-          card.classList.add('skill-card-pulse');
-          
-          // Remove the class after animation completes
-          setTimeout(() => {
-            card.classList.remove('skill-card-pulse');
-          }, 400);
-          
-          // Increment XP Counter logic (could be connected to a backend in a real implementation)
-          const xpCounter = card.querySelector('.progress-xp span');
-          if (xpCounter) {
-            const [current, total] = xpCounter.textContent.split(' / ').map(num => parseInt(num));
-            
-            // Only increment if not at max
-            if (current < total) {
-              const newValue = Math.min(current + 10, total);
-              xpCounter.textContent = `${newValue} / ${total} XP`;
-              
-              // Update progress bar width
-              const progressFill = card.querySelector('.progress-fill');
-              const percentage = (newValue / total) * 100;
-              progressFill.style.width = `${percentage}%`;
-              
-              // Update percentage text
-              const percentageText = card.querySelector('.progress-percentage');
-              percentageText.textContent = `${Math.round(percentage)}%`;
-              
-              // Level up logic
-              if (newValue === total) {
-                const levelIndicator = card.querySelector('.skill-level-indicator');
-                const currentLevel = parseInt(levelIndicator.textContent.split(' ')[1]);
-                levelIndicator.textContent = `Level ${currentLevel + 1}`;
-                
-                // Add a temporary level up effect
-                levelIndicator.classList.add('level-up');
-                setTimeout(() => {
-                  levelIndicator.classList.remove('level-up');
-                }, 1500);
-              }
-            }
-          }
-        });
-      });
-      
-      // Add CSS for badge tooltips and skill card pulse animation
-      const style = document.createElement('style');
-      style.textContent = `
-        .badge-tooltip {
-          position: absolute;
-          top: -35px;
-          left: 50%;
-          transform: translateX(-50%) translateY(-5px);
-          background-color: var(--foreground);
-          color: var(--background);
-          padding: 0.3rem 0.5rem;
-          border-radius: 4px;
-          font-size: 0.7rem;
-          white-space: nowrap;
-          pointer-events: none;
-          opacity: 0;
-          transition: opacity 0.3s ease, transform 0.3s ease;
-          display: none;
-          z-index: 100;
-        }
-        
-        .badge-tooltip::after {
-          content: '';
-          position: absolute;
-          left: 50%;
-          bottom: -5px;
-          transform: translateX(-50%);
-          border-width: 5px 5px 0;
-          border-style: solid;
-          border-color: var(--foreground) transparent transparent;
-        }
-        
-        .badge {
-          position: relative;
-        }
-        
-        @keyframes cardPulse {
-          0% {
-            transform: scale(1);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-          }
-          50% {
-            transform: scale(1.03);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-          }
-          100% {
-            transform: scale(1);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-          }
-        }
-        
-        .skill-card-pulse {
-          animation: cardPulse 0.4s ease;
-        }
-        
-        @keyframes levelUp {
-          0% {
-            transform: scale(1);
-            box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0.7);
-          }
-          70% {
-            transform: scale(1.1);
-            box-shadow: 0 0 0 10px rgba(var(--primary-rgb), 0);
-          }
-          100% {
-            transform: scale(1);
-            box-shadow: 0 0 0 0 rgba(var(--primary-rgb), 0);
-          }
-        }
-        
-        .level-up {
-          animation: levelUp 1.5s ease;
-        }
-        
-        :root {
-          --primary-rgb: 33, 150, 243;
-        }
-        
-        .dark-theme {
-          --primary-rgb: 33, 150, 243;
-        }
-      `;
-      document.head.appendChild(style);
-    </script>
-  </body>
+    });
+  </script>
+
+</body>
 </html>
