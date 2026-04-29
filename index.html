@@ -764,7 +764,7 @@
           </div>
 
           <div class="contact-form-container">
-            <form class="contact-form" id="contact-form" action="mailto:mustafa.official.co@outlook.com" method="post" enctype="text/plain">
+            <form class="contact-form" id="contact-form">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
@@ -879,16 +879,35 @@
       backToTop.classList.toggle('show', window.scrollY > 400);
     }, { passive: true });
 
-    // Contact Form
-    document.getElementById('contact-form').addEventListener('submit', () => {
-      document.getElementById('form-success').style.display = 'block';
-      document.getElementById('form-error').style.display   = 'none';
-      setTimeout(() => {
-        if (document.activeElement === document.body) {
-          document.getElementById('form-error').style.display   = 'block';
-          document.getElementById('form-success').style.display = 'none';
+    // Contact Form — Formspree
+    document.getElementById('contact-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const form    = e.target;
+      const success = document.getElementById('form-success');
+      const error   = document.getElementById('form-error');
+      const btn     = form.querySelector('.submit-button');
+      btn.disabled    = true;
+      btn.textContent = 'Sending…';
+      try {
+        const res = await fetch('https://formspree.io/f/mnjwadrk', {
+          method:  'POST',
+          body:    new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          success.style.display = 'block';
+          error.style.display   = 'none';
+          form.reset();
+        } else {
+          throw new Error();
         }
-      }, 1000);
+      } catch {
+        error.style.display   = 'block';
+        success.style.display = 'none';
+      } finally {
+        btn.disabled  = false;
+        btn.innerHTML = '<i class="ri-send-plane-line"></i> Send Message';
+      }
     });
 
     // Smooth scroll for all anchor links
